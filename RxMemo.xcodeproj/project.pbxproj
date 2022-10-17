@@ -28,6 +28,7 @@
 		DA77C16D28FCDC53004E3DB2 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C16C28FCDC53004E3DB2 /* Scene.swift */; };
 		DA77C16F28FCDDC0004E3DB2 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C16E28FCDDC0004E3DB2 /* SceneCoordinatorType.swift */; };
 		DA77C17128FCDE24004E3DB2 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C17028FCDE24004E3DB2 /* SceneCoordinator.swift */; };
+		DA77C17328FCE1D0004E3DB2 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C17228FCE1D0004E3DB2 /* CommonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		DA77C16C28FCDC53004E3DB2 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		DA77C16E28FCDDC0004E3DB2 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		DA77C17028FCDE24004E3DB2 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		DA77C17228FCE1D0004E3DB2 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				DA77C16428FCD8DD004E3DB2 /* MemoDetailViewModel.swift */,
 				DA77C16628FCD8F1004E3DB2 /* MemoComposeViewModel.swift */,
 				DA77C16828FCD918004E3DB2 /* ViewModelBindableType.swift */,
+				DA77C17228FCE1D0004E3DB2 /* CommonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				DA77C16F28FCDDC0004E3DB2 /* SceneCoordinatorType.swift in Sources */,
 				DA77C16328FCD8B7004E3DB2 /* MemoListViewModel.swift in Sources */,
 				DA77C16528FCD8DD004E3DB2 /* MemoDetailViewModel.swift in Sources */,
+				DA77C17328FCE1D0004E3DB2 /* CommonViewModel.swift in Sources */,
 				DA77C16B28FCDC02004E3DB2 /* TransitionModel.swift in Sources */,
 				DA77C15D28FCD808004E3DB2 /* MemoListViewController.swift in Sources */,
 				DA77C16128FCD866004E3DB2 /* MemoComposeViewController.swift in Sources */,
