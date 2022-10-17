@@ -38,6 +38,11 @@ class MemoListViewController: UIViewController, ViewModelBindableType {
             .map { $1.0 }
             .bind(to: viewModel.detailAction.inputs) // 이렇게 하면 선택한 메모가 action으로 전달되고, action에 구현되어 있는 코드가 실행됨.
             .disposed(by: rx.disposeBag)
+        
+        listTableView.rx.modelDeleted(Memo.self) // 삭제와 연관된 컨트롤 이벤트를 구독하면 swipeToDelete가 자동으로 활성화 됨.
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
+            .bind(to: viewModel.deleteAction.inputs)
+            .disposed(by: rx.disposeBag)
     }
 
     override func viewDidLoad() {
