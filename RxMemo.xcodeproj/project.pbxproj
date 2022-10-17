@@ -29,6 +29,7 @@
 		DA77C16F28FCDDC0004E3DB2 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C16E28FCDDC0004E3DB2 /* SceneCoordinatorType.swift */; };
 		DA77C17128FCDE24004E3DB2 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C17028FCDE24004E3DB2 /* SceneCoordinator.swift */; };
 		DA77C17328FCE1D0004E3DB2 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C17228FCE1D0004E3DB2 /* CommonViewModel.swift */; };
+		DA77C17528FD1BF5004E3DB2 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C17428FD1BF5004E3DB2 /* CoreDataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		DA77C16E28FCDDC0004E3DB2 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		DA77C17028FCDE24004E3DB2 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		DA77C17228FCE1D0004E3DB2 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		DA77C17428FD1BF5004E3DB2 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				DA77C14128FCCFFA004E3DB2 /* RxMemo.xcdatamodeld */,
+				DA77C17428FD1BF5004E3DB2 /* CoreDataStorage.swift */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA77C15B28FCD43C004E3DB2 /* MemoryStorage.swift in Sources */,
+				DA77C17528FD1BF5004E3DB2 /* CoreDataStorage.swift in Sources */,
 				DA77C16728FCD8F1004E3DB2 /* MemoComposeViewModel.swift in Sources */,
 				DA77C17128FCDE24004E3DB2 /* SceneCoordinator.swift in Sources */,
 				DA77C16D28FCDC53004E3DB2 /* Scene.swift in Sources */,
