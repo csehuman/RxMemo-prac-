@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import Action
+import NSObject_Rx
 
 class MemoDetailViewController: UIViewController, ViewModelBindableType {
     
@@ -39,6 +43,17 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
         .disposed(by: rx.disposeBag)
         
         editButton.rx.action = viewModel.makeEditAction()
+        
+        shareButton.rx.tap
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
+            .withUnretained(self)
+            .subscribe(onNext: { (vc, _) in
+                let memo = vc.viewModel.memo.content
+                
+                let activityVC = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
+                vc.present(activityVC, animated: true, completion: nil)
+            })
+            .disposed(by: rx.disposeBag)
         
 //        var backButton = UIBarButtonItem(title: nil, style: .done, target: nil, action: nil)
 //        viewModel.title
