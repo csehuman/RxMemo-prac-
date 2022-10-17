@@ -27,7 +27,9 @@ extension Scene {
                 fatalError()
             }
             
-            listVC.bind(viewModel: memoListViewModel)
+            DispatchQueue.main.async {
+                listVC.bind(viewModel: memoListViewModel)
+            }
             
             return nav // nav 리턴해야 navBar 표시나 nav Stack 작동이 정상적으로 됨.
             
@@ -35,7 +37,10 @@ extension Scene {
             guard var detailVC = storyboard.instantiateViewController(withIdentifier: "DetailVC") as? MemoDetailViewController else {
                 fatalError()
             }
-            detailVC.bind(viewModel: memoDetailViewModel)
+            
+            DispatchQueue.main.async {
+                detailVC.bind(viewModel: memoDetailViewModel)
+            }
             
             return detailVC
             
@@ -48,7 +53,9 @@ extension Scene {
                 fatalError()
             }
             
-            composeVC.bind(viewModel: memoComposeViewModel)
+            DispatchQueue.main.async {
+                composeVC.bind(viewModel: memoComposeViewModel)
+            }
             
             return nav // nav 리턴해야 navBar 표시나 nav Stack 작동이 정상적으로 됨.
         }
