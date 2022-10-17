@@ -39,7 +39,7 @@ class SceneCoordinator: SceneCoordinatorType {
             
             subject.onCompleted()
         case .push:
-            print(currentVC)
+            print("CurrentVC", currentVC)
             
             guard let nav = currentVC.navigationController else {
                 subject.onError(TransitionError.navigationControllerMissing)
@@ -49,6 +49,7 @@ class SceneCoordinator: SceneCoordinatorType {
             nav.rx.willShow
                 .withUnretained(self)
                 .subscribe(onNext: { (coordinator, evt) in
+                    print("EvtVC", evt.viewController.sceneViewController)
                     coordinator.currentVC = evt.viewController.sceneViewController
                 })
                 .disposed(by: bag)
