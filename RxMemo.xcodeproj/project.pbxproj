@@ -20,6 +20,10 @@
 		DA77C15D28FCD808004E3DB2 /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C15C28FCD808004E3DB2 /* MemoListViewController.swift */; };
 		DA77C15F28FCD849004E3DB2 /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C15E28FCD849004E3DB2 /* MemoDetailViewController.swift */; };
 		DA77C16128FCD866004E3DB2 /* MemoComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C16028FCD866004E3DB2 /* MemoComposeViewController.swift */; };
+		DA77C16328FCD8B7004E3DB2 /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C16228FCD8B7004E3DB2 /* MemoListViewModel.swift */; };
+		DA77C16528FCD8DD004E3DB2 /* MemoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C16428FCD8DD004E3DB2 /* MemoDetailViewModel.swift */; };
+		DA77C16728FCD8F1004E3DB2 /* MemoComposeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C16628FCD8F1004E3DB2 /* MemoComposeViewModel.swift */; };
+		DA77C16928FCD918004E3DB2 /* ViewModelBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C16828FCD918004E3DB2 /* ViewModelBindableType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		DA77C15C28FCD808004E3DB2 /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
 		DA77C15E28FCD849004E3DB2 /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
 		DA77C16028FCD866004E3DB2 /* MemoComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewController.swift; sourceTree = "<group>"; };
+		DA77C16228FCD8B7004E3DB2 /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
+		DA77C16428FCD8DD004E3DB2 /* MemoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewModel.swift; sourceTree = "<group>"; };
+		DA77C16628FCD8F1004E3DB2 /* MemoComposeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewModel.swift; sourceTree = "<group>"; };
+		DA77C16828FCD918004E3DB2 /* ViewModelBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindableType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,10 @@
 		DA77C15128FCD206004E3DB2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DA77C16228FCD8B7004E3DB2 /* MemoListViewModel.swift */,
+				DA77C16428FCD8DD004E3DB2 /* MemoDetailViewModel.swift */,
+				DA77C16628FCD8F1004E3DB2 /* MemoComposeViewModel.swift */,
+				DA77C16828FCD918004E3DB2 /* ViewModelBindableType.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,11 +293,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA77C15B28FCD43C004E3DB2 /* MemoryStorage.swift in Sources */,
+				DA77C16728FCD8F1004E3DB2 /* MemoComposeViewModel.swift in Sources */,
 				DA77C15F28FCD849004E3DB2 /* MemoDetailViewController.swift in Sources */,
+				DA77C16928FCD918004E3DB2 /* ViewModelBindableType.swift in Sources */,
 				DA77C13928FCCFFA004E3DB2 /* AppDelegate.swift in Sources */,
 				DA77C15728FCD39A004E3DB2 /* MemoStorageType.swift in Sources */,
 				DA77C13B28FCCFFA004E3DB2 /* SceneDelegate.swift in Sources */,
 				DA77C14328FCCFFA004E3DB2 /* RxMemo.xcdatamodeld in Sources */,
+				DA77C16328FCD8B7004E3DB2 /* MemoListViewModel.swift in Sources */,
+				DA77C16528FCD8DD004E3DB2 /* MemoDetailViewModel.swift in Sources */,
 				DA77C15D28FCD808004E3DB2 /* MemoListViewController.swift in Sources */,
 				DA77C16128FCD866004E3DB2 /* MemoComposeViewController.swift in Sources */,
 				DA77C15528FCD2AB004E3DB2 /* Memo.swift in Sources */,
